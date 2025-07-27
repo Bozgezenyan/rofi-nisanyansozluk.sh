@@ -28,12 +28,12 @@ Artık betiği doğrudan terminalden tam yolunu yazarak çalıştırabilirsiniz.
 ~/rofi-nisanyan/rofi-nisanyan.sh
  ```
 
-## Daha hızlı erişim için, ~/rofi-nisanyan/rofi-nisanyan.sh komutunu kullandığınız pencere yöneticisinin ayarlarından klavye kısayoluna atayabilirsiniz.
-#### i3wm/Sway için örnek:
+## Daha hızlı erişim için, pencere yöneticinizin ayarlarından klavye kısayolu atayabilirsiniz.
+##### i3wm/Sway için örnek:
 ```bash
 bindsym $mod+n exec ~/rofi-nisanyan/rofi-nisanyan.sh\
  ```
-#### Hyprland için örnek:
+##### Hyprland için örnek:
 ```bash
 bind = $mainMod, N, exec, ~/rofi-nisanyan/rofi-nisanyan.sh
  ```
