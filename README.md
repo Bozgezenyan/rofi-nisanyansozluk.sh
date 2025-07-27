@@ -46,6 +46,7 @@ Kurulum betiği, sizin için bir uygulama kısayolu da oluşturur. Bu kısayolu 
 ```bash
 mv ~/scripts/rofi-nisanyan.desktop ~/.local/share/applications/
 update-desktop-database ~/.local/share/applications/
+ ```
 
 #### 5. Daha hızlı erişim için, ~/scripts/rofi-nisanyan.sh komutunu kullandığınız pencere yöneticisinin ayarlarından  klavye kısayoluna atayabilirsiniz.
 # i3wm/Sway için örnek:
@@ -73,5 +74,4 @@ update-desktop-database ~/.local/share/applications/
 
 echo "Nişanyan Sözlük betiği sistemden kaldırıldı."
 
-#### Veritabanı için teşekkürler
-(https://www.kaggle.com/datasets/agmmnn/nisanyansozluk-updated)
+[Veritabanı için teşekkürler](https://www.kaggle.com/datasets/agmmnn/nisanyansozluk-updated)
