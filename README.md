@@ -2,9 +2,9 @@
 
 Bu proje, [Rofi](https://github.com/davatorium/rofi) uygulama başlatıcısını kullanarak Sevan Nişanyan'ın Etimolojik Sözlüğü'nde hızlı ve çevrimdışı arama yapmanızı sağlayan bir betik içerir.
 
-# Tüm veritabanı yerel olarak saklandığı için anında arama yapar.
-# Bir kelime aratıp anlamına baktıktan sonra geri döndüğünüzde,kelimenin kök hali tekrar Esc'e basana kadar ekranınızda kalır
-# Anlam ekranındaki satırlara tıklayarak Google'da arama yapabilir veya kelimenin web sitesindeki orijinal sayfasına ulaşabilirsiniz.
+Tüm veritabanı yerel olarak saklandığı için anında arama yapar.
+Bir kelime aratıp anlamına baktıktan sonra geri döndüğünüzde,kelimenin kök hali tekrar Esc'e basana kadar ekranınızda kalır
+Anlam ekranındaki satırlara tıklayarak Google'da arama yapabilir veya kelimenin web sitesindeki orijinal sayfasına ulaşabilirsiniz.
 
 ## Kurulum
 
