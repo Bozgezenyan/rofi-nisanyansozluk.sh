@@ -1,15 +1,15 @@
 # Rofi için Nişanyan Sözlük: Çağdaş Türkçenin Etimolojisi
 
-Bu proje, [Rofi](https://github.com/davatorium/rofi) uygulama başlatıcısını kullanarak Sevan Nişanyan'ın Etimolojik Sözlüğü'nde hızlı ve çevrimdışı arama yapmanızı sağlayan bir betik içerir.
-[rofi-tdk.sh'tan](https://github.com/metwse/rofi-tdk.sh/tree/main) açıkça ilham alınarak tasarlanmıştır. O sayfayı da ziyaret etmeniz önerilir.
+Bu proje, [Rofi](https://github.com/davatorium/rofi) uygulama başlatıcısını kullanarak Sevan Nişanyan'ın Etimolojik Sözlüğü'nde hızlı ve çevrimdışı arama yapmanızı sağlar.\
+[rofi-tdk.sh'tan](https://github.com/metwse/rofi-tdk.sh/tree/main) açıkça ilham alınarak tasarlanmıştır. O projeye de göz atmanız önerilir.
 
-Tüm veritabanı yerel olarak saklandığı için anında arama yapar. 
-Bir kelime aratıp anlamına baktıktan sonra geri döndüğünüzde,kelimenin kök hali tekrar Esc'e basana kadar ekranınızda kalır
+Tüm veritabanı yerel olarak saklandığı için anında arama yapar.\
+Bir kelime aratıp anlamına baktıktan sonra geri döndüğünüzde, kelimenin kök hali tekrar Esc'e basana kadar ekranınızda kalır.\
 Anlam ekranındaki satırlara tıklayarak Google'da arama yapabilir veya kelimenin web sitesindeki orijinal sayfasına ulaşabilirsiniz.
 
 ## Kurulum
 
-Sisteminize `rofi` ve `jq` paketlerinin kurulu olması gerekmektedir.
+Sisteminizde `rofi` ve `jq` paketlerinin kurulu olması gerekmektedir.
 
 #### Adım 1: Dosyaları İndirin
 
@@ -22,13 +22,21 @@ Terminali açın ve dosyaları koyduğunuz klasörün içindeyken aşağıdaki k
 ```bash
 chmod +x rofi-nisanyan.sh
  ```
+Artık betiği doğrudan terminalden tam yolunu yazarak çalıştırabilirsiniz.
 
-#### 4. Daha hızlı erişim için, ~/scripts/rofi-nisanyan.sh komutunu kullandığınız pencere yöneticisinin ayarlarından  klavye kısayoluna atayabilirsiniz.
-# i3wm/Sway için örnek:
-bindsym $mod+n exec ~/rofi-nisanyan/rofi-nisanyan.sh
+```bash
+~/rofi-nisanyan/rofi-nisanyan.sh
+ ```
 
-# Hyprland için örnek:
+## Daha hızlı erişim için, ~/rofi-nisanyan/rofi-nisanyan.sh komutunu kullandığınız pencere yöneticisinin ayarlarından klavye kısayoluna atayabilirsiniz.
+#### i3wm/Sway için örnek:
+```bash
+bindsym $mod+n exec ~/rofi-nisanyan/rofi-nisanyan.sh\
+ ```
+#### Hyprland için örnek:
+```bash
 bind = $mainMod, N, exec, ~/rofi-nisanyan/rofi-nisanyan.sh
+ ```
 
 #### Projeyi kaldırmak için dosyaları indirdiğiniz klasörü silmeniz yeterlidir.
 
