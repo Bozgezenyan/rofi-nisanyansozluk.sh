@@ -1,8 +1,9 @@
 # Rofi için Nişanyan Sözlük: Çağdaş Türkçenin Etimolojisi
 
 Bu proje, [Rofi](https://github.com/davatorium/rofi) uygulama başlatıcısını kullanarak Sevan Nişanyan'ın Etimolojik Sözlüğü'nde hızlı ve çevrimdışı arama yapmanızı sağlayan bir betik içerir.
+[rofi-tdk.sh'tan](https://github.com/metwse/rofi-tdk.sh/tree/main) açıkça ilham alınarak tasarlanmıştır. O sayfayı da ziyaret etmeniz önerilir.
 
-Tüm veritabanı yerel olarak saklandığı için anında arama yapar.
+Tüm veritabanı yerel olarak saklandığı için anında arama yapar. 
 Bir kelime aratıp anlamına baktıktan sonra geri döndüğünüzde,kelimenin kök hali tekrar Esc'e basana kadar ekranınızda kalır
 Anlam ekranındaki satırlara tıklayarak Google'da arama yapabilir veya kelimenin web sitesindeki orijinal sayfasına ulaşabilirsiniz.
 
