@@ -13,7 +13,7 @@ Sisteminizde `rofi` ve `jq` paketlerinin kurulu olması gerekmektedir.
 
 #### Adım 1: Dosyaları İndirin
 
-Bu repodan `nisanyan-db.tar.gz` ve `rofi-nisanyan.sh` dosyalarını indirin ve ikisini de **aynı klasörün içine** koyun. Örneğin: `~/rofi-nisanyan/`
+Bu repodan `nisanyan-db.tar.gz` ve `rofi-nisanyan.sh` dosyalarını indirin ve ikisini de **Home klasörünüzde oluşturacağınız** **aynı klasörün içine** koyun. Örneğin: `~/rofi-nisanyan/`
 
 #### Adım 2: Betiği Çalıştırılabilir Yapın
 
@@ -38,6 +38,6 @@ bindsym $mod+n exec ~/rofi-nisanyan/rofi-nisanyan.sh\
 bind = $mainMod, N, exec, ~/rofi-nisanyan/rofi-nisanyan.sh
  ```
 
-#### Projeyi kaldırmak için dosyaları indirdiğiniz klasörü silmeniz yeterlidir.
+#### Projeyi kaldırmak için `~/rofi-nisanyan/` klasörünü silmeniz yeterlidir.
 
 [Veritabanı için teşekkürler](https://www.kaggle.com/datasets/agmmnn/nisanyansozluk-updated)
