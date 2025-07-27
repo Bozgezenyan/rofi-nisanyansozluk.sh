@@ -9,70 +9,27 @@ Anlam ekranındaki satırlara tıklayarak Google'da arama yapabilir veya kelimen
 
 ## Kurulum
 
-#### 1. Depoyu İndirin
-Bu repodan `KURULUM.sh` ve `nisanyansozluk.tar.gz` dosyalarını aynı klasöre indirin.
+Sisteminize `rofi` ve `jq` paketlerinin kurulu olması gerekmektedir.
 
-#### 2. Bağımlılıkları Kurun
-Kurulumun çalışması için sisteminizde `rofi` ve `jq` paketlerinin kurulu olması gerekir.
+#### Adım 1: Dosyaları İndirin
 
-* **Arch Linux için:**
-    ```bash
-    sudo pacman -S rofi jq
-    ```
+Bu repodan `nisanyan-db.tar.gz` ve `rofi-nisanyan.sh` dosyalarını indirin ve ikisini de **aynı klasörün içine** koyun. Örneğin: `~/rofi-nisanyan/`
 
-* **Debian / Ubuntu için:**
-    ```bash
-    sudo apt install rofi jq
-    ```
+#### Adım 2: Betiği Çalıştırılabilir Yapın
 
-#### 3. Kurulumu Çalıştırın
-İndirdiğiniz klasörün içinde terminali açın ve aşağıdaki komutları sırayla çalıştırın.
+Terminali açın ve dosyaları koyduğunuz klasörün içindeyken aşağıdaki komutu çalıştırın:
 
-1.  **Veri Dosyasını Arşivden Çıkarın:**
-    ```bash
-    tar -xzf nisanyansozluk.json.tar.gz
-    ```
-    Bu komut, `nisanyansozluk.json` dosyasını oluşturacaktır.
-
-2.  **Kurulum Betiğini Çalıştırın:**
-    Betik, kurulum sırasında veritabanını ve diğer dosyaları oluşturup gerekli yerlere taşımak için sizden yönetici şifrenizi (`sudo`) isteyecektir.
-    ```bash
-    chmod +x KURULUM.sh
-    ./KURULUM.sh
-    ```
-    Kurulum tamamlandığında, betik size sonraki adımları söyleyecektir.
-
-#### 4. Uygulama Kısayolunu Yükleyin
-Kurulum betiği, sizin için bir uygulama kısayolu da oluşturur. Bu kısayolu sisteminize tanıtmak için betiğin sonunda size önerilen şu komutları çalıştırın:
 ```bash
-mv ~/scripts/rofi-nisanyan.desktop ~/.local/share/applications/
-update-desktop-database ~/.local/share/applications/
+chmod +x rofi-nisanyan.sh
  ```
 
-#### 5. Daha hızlı erişim için, ~/scripts/rofi-nisanyan.sh komutunu kullandığınız pencere yöneticisinin ayarlarından  klavye kısayoluna atayabilirsiniz.
+#### 4. Daha hızlı erişim için, ~/scripts/rofi-nisanyan.sh komutunu kullandığınız pencere yöneticisinin ayarlarından  klavye kısayoluna atayabilirsiniz.
 # i3wm/Sway için örnek:
-bindsym $mod+n exec --no-startup-id ~/scripts/rofi-nisanyan.sh
+bindsym $mod+n exec ~/rofi-nisanyan/rofi-nisanyan.sh
 
 # Hyprland için örnek:
-bind = $mainMod, N, exec, ~/scripts/rofi-nisanyan.sh
+bind = $mainMod, N, exec, ~/rofi-nisanyan/rofi-nisanyan.sh
 
-#### Projeyi sisteminizden tamamen kaldırmak için aşağıdaki komutları terminalde çalıştırmanız yeterlidir:
-
-# Sistem geneline kurulan veritabanını sil
-sudo rm -f /usr/local/share/nisanyan-db.tar.gz
-
-# Rofi betiğini ve kurulum dosyalarını içeren klasörü sil
-rm -rf ~/scripts
-
-# Uygulama kısayolunu sil
-rm -f ~/.local/share/applications/rofi-nisanyan.desktop
-
-# Rofi'nin çalışma zamanı önbelleğini sil
-rm -rf /dev/shm/rofi-nisanyan-cache
-
-# Uygulama menüsü veritabanını güncelle
-update-desktop-database ~/.local/share/applications/
-
-echo "Nişanyan Sözlük betiği sistemden kaldırıldı."
+#### Projeyi kaldırmak için dosyaları indirdiğiniz klasörü silmeniz yeterlidir.
 
 [Veritabanı için teşekkürler](https://www.kaggle.com/datasets/agmmnn/nisanyansozluk-updated)
